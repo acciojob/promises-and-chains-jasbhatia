@@ -8,13 +8,12 @@ function validation(){
 		alert("Please enter valid details");
 		return;
 	}
-	
+	let obj={msg1:`Welcome,${name}. You can vote.`, msg2:`Oh sorry ${name}. You aren't old enough.`}
 	let promise= new Promise((resolve,reject)=>{
 		if(age>=18){
-			resolve(`Welcome,${name}. You can vote.`);
-		}
+			resolve(obj.msg1)		}
 		else{
-			reject(`Oh sorry ${name}. You aren't old enough.`);
+			reject(obj.msg2);
 		}
 	})
 	 promise.then((msg)=>{
