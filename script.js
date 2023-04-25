@@ -18,7 +18,7 @@ function validation(e){
 		}
 	})
 	 promise.then((msg)=>{
-	alert(m)
+	alert(msg)
 },4000)
 .catch((error)=>{
 	alert(error)
