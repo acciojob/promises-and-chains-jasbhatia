@@ -5,7 +5,7 @@ function validation(){
 	let name= document.getElementById("name").value;
 	
 	if(name.trim()=='' || age.trim()==''){
-		alert('inputs can not be empty');
+		alert("Please enter valid details");
 		return;
 	}
 	
