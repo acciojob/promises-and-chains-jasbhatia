@@ -16,11 +16,11 @@ function validation(){
 			reject(obj.name);
 		}
 	})
-	 promise.then((msg)=>{
-	alert(msg)
+	 promise.then((data)=>{
+	alert(`Welcome, ${data.name}. You can vote.`)
 },4000)
 .catch((error)=>{
-	alert(error)
+	alert(`Oh sorry ${error.name}. You aren't old enough.`)
 })
 	
 	
