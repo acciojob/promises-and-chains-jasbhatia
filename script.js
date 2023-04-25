@@ -13,7 +13,7 @@ function validation(){
 		if(Age>=18){
 			resolve(obj)		}
 		else{
-			reject(obj.name);
+			reject(obj);
 		}
 	})
 	 promise.then((data)=>{
