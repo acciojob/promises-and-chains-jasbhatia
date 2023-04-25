@@ -11,14 +11,13 @@ function validation(e){
 			reject(`Oh sorry ${name}. You aren't old enough.`);
 		}
 	})
-	 return promise;
+	 promise.then((msg)=>{
+	alert(m)
+},4000)
+.catch((error)=>{
+	alert(error)
+})
 	
 	
 }
 
-validation().then((m)=>{
-	alert(m)
-},4000)
-.catch((e)=>{
-	alert(e)
-})
