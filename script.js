@@ -1,19 +1,19 @@
 //your JS code here. If required.
 function validation(){
 	// e.preventDefault();
-    let age= document.getElementById("age").value;
-	let name= document.getElementById("name").value;
+    let Age= document.getElementById("age").value;
+	let Name= document.getElementById("name").value;
 	
 	if(name.trim()=='' || age.trim()==''){
 		alert("Please enter valid details");
 		return;
 	}
-	let obj={message:`Welcome,${name}. You can vote.`,showDiff:`Oh sorry ${name}. You aren't old enough.`}
+	let obj={name:Name, age:Age}
 	let promise= new Promise((resolve,reject)=>{
 		if(age>=18){
-			resolve(obj.message)		}
+			resolve(obj.name)		}
 		else{
-			reject(obj.showDiff);
+			reject(obj.name);
 		}
 	})
 	 promise.then((msg)=>{
