@@ -1,6 +1,6 @@
 //your JS code here. If required.
-function validation(e){
-	e.preventDefault();
+function validation(){
+	// e.preventDefault();
     let age= document.getElementById("age").value;
 	let name= document.getElementById("name").value;
 	
