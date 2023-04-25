@@ -1,13 +1,14 @@
 //your JS code here. If required.
 function validation(e){
 	e.preventDefault();
-
+    let age= document.getElementById("age").value;
+	let name= document.getElementById("name").value;
+	
 	if(name.trim()=='' || age.trim()==''){
 		alert('inputs can not be empty');
 		return;
 	}
-	let age= document.getElementById("age").value;
-	let name= document.getElementById("name").value;
+	
 	let promise= new Promise((resolve,reject)=>{
 		if(age>=18){
 			resolve(`Welcome,${name}. You can vote.`);
