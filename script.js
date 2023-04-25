@@ -3,7 +3,7 @@ function validation(e){
 	e.preventDefault();
 
 	if(name.trim()=='' || age.trim()==''){
-		alert('Enter all fields');
+		alert('inputs can not be empty');
 		return;
 	}
 	let age= document.getElementById("age").value;
