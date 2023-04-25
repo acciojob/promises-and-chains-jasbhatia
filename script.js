@@ -11,9 +11,9 @@ function validation(){
 	let obj={name:Name, age:Age}
 	let promise= new Promise((resolve,reject)=>{
 		if(Age>=18){
-			resolve(obj.name)		}
+			resolve(obj)		}
 		else{
-			reject(obj.name);
+			reject(obj);
 		}
 	})
 	 promise.then((data)=>{
