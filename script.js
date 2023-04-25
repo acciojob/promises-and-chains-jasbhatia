@@ -10,7 +10,7 @@ function validation(){
 	}
 	let obj={name:Name, age:Age}
 	let promise= new Promise((resolve,reject)=>{
-		if(age>=18){
+		if(Age>=18){
 			resolve(obj.name)		}
 		else{
 			reject(obj.name);
