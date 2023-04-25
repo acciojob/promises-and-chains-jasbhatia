@@ -1,6 +1,11 @@
 //your JS code here. If required.
 function validation(e){
 	e.preventDefault();
+
+	if(name.trim()=='' || age.trim()==''){
+		alert('Enter all fields');
+		return;
+	}
 	let age= document.getElementById("age").value;
 	let name= document.getElementById("name").value;
 	let promise= new Promise((resolve,reject)=>{
